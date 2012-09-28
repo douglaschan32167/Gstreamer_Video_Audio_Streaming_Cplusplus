@@ -23,7 +23,8 @@ rtpmp4vpay- puts the mp4 video into packets that can be sent over rtp
 gstrtpsession- what it sounds like: starts an rtp streaming session. the .send_rtp_sink and .send_rtp_src pads are necessary for using this
 to send data over rtp. The receiving app will have a .recv_rtp_sink and .recg_rtp_src to be able to connect to this stream.
 udpsink- specifies the port and host where the video is going. The default host is localhost. Here I had to set it to the public IP address of 
-the computer that I was sending it to. The default port is 4951.
+the computer that I was sending it to. The default port is 4951. Please note that you will have to change the IP address based on where you
+are sending the data.
 
 audio:
 autoaudiosrc-automatically detects an audio input device (ie a microphone) and sets it to the audio source.
